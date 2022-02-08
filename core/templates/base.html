@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}Saite do Gordim{% endblock %}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}" media="screen" />
+
+</head>
+<body>
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="{% url 'index' %}">Your Logo</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <!-- Exibe a Navbar -->
+    <section class="home">
+    </section>
+    <div class="container">
+        {% block container %}
+
+        {% endblock %}
+    </div>
+
+    <footer>
+        <ul class="horizontal_menu">
+          <li class="pull-right"><a href="#top">Voltar ao Topo</a></li>
+          <li><a href="">Início</a></li>
+          <li><a href="">Produtos</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Termos e Privacidade</a></li>
+        </ul>
+    </footer>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="{% static 'assets/js/navbar.js' %}"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+</html>
