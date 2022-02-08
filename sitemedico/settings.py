@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'sitemedico.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd7aehte2q9rstm',
+        'USER': 'avthjpgjnuyldp',
+        'PASSWORD': '27dd88d3f700d0374c2e97722f72416a5247a6071f1be9e33f72568306ce9c60',
+        'HOST': 'ec2-18-235-114-62.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
