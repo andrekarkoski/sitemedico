@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 
+from django.core.mail import EmailMessage
+
 import os
 import dj_database_url
 
@@ -41,6 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # libs
+    'widget_tweaks',
 
     # apps
     'core',
@@ -143,3 +148,24 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# E-mail
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'andreskarkoski@gmail.com'
+EMAIL_HOST_PASSWORD = 'zbtymtmiwplkpdrd'
+DEFAULT_FROM_EMAIL = 'andreskarkoski@gmail.com'
+
+
+
+### Id do app instagran
+### 340629544639865
+
+### Chave secreta do aplicativo do Instagram
+### 18944139262f346b15be5874e3be2c16
+
+### token
+### 06e98caeefbeeff87eba4ab62bde0ddb

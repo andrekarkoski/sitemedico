@@ -1,0 +1,48 @@
+
+#logo {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+
+  grid-template-areas:
+    "braco_dir cabeca braco_esq"
+    "braco_dir1 tronco braco_esq1"
+    "pe_dir pes pe_esq";
+
+
+    justify-content: space-evenly;
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 300px;
+  height: 300px;
+}
+
+.braco_dir {
+    grid-area: braco_dir;
+}
+
+.cabeca { grid-area: cabeca;
+}
+
+.braco_esq { grid-area: braco_esq;
+}
+
+.braco_dir1 { grid-area: braco_dir1;
+}
+
+.tronco {
+    grid-area: tronco;
+}
+
+.braco_esq1 {
+    grid-area: braco_esq1;
+}
+
+.branco_dir { grid-area: branco_dir;}
+
+.pes { grid-area: pes; }
+
+.pe_esq { grid-area: pe_esq; }
+
+.pe_dir { grid-area: pe_dir; }

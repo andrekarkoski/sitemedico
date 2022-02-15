@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block container %}
+<link rel="stylesheet" href="{% static 'assets/css/index.css' %}" media="screen" />
+
+    <!-- Place <div> tag where you want the feed to appear -->
+    <div id="curator-feed-default-feed-layout">
+    </div>
+
+    <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+    <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+        (function(){
+            var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+            i.src="https://cdn.curator.io/published/ec98cef1-f071-4b49-a02a-6fd7d51bf796.js";
+            e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+        })();
+    </script>
+{% endblock %}

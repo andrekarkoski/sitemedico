@@ -8,64 +8,56 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/index.css' %}" media="screen" />
     <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}" media="screen" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
 
 </head>
 <body>
-<nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="{% url 'index' %}">Saite pro gordim esmagrecer ozoto</a>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                </ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
+
+    <div id="logo" class="row container" >
+        <div class="braco_dir"><img src="../static/assets/img/braco_dir.png"  style="width: 100px;
+            height: 100px;"></div>
+        <div class="cabeca"><img src="../static/assets/img/cabeca.png"  style="width: 100px;
+            height: 100px;"></div>
+        <div class="braco_esq"><img src="../static/assets/img/braco_esq.png" style="width: 100px;
+            height: 100px;"></div>
+        <div class="braco_dir1"><img src="../static/assets/img/braco_dir1.png" style="width: 100px;
+            height: 100px;"></div>
+        <div class="tronco"><img src="../static/assets/img/tronco.png" style="width: 100px;
+            height: 100px;"></div>
+        <div class="braco_esq1"><img src="../static/assets/img/braco_esq1.png" style="width: 100px;
+            height: 100px;"></div>
+        <div class="pe_dir"><img src="../static/assets/img/pe_dir.png" style="width: 100px;
+            height: 100px;"></div>
+        <div class="pes"><img src="../static/assets/img/pes.png" style="width: 100px;
+            height: 100px;"></div>
+        <div class="pe_esq"><img src="../static/assets/img/pe_esq.png" style="width: 100px;
+            height: 100px;">
         </div>
+    </div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'gallery' %}">Galeria</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="{% url 'contact' %}">Contato</a></li>
+        </ul>
     </nav>
-    <!-- Exibe a Navbar -->
-    <section class="home">
-    </section>
-    <div class="container">
+    <div class="section">
         {% block container %}
 
         {% endblock %}
     </div>
 
-    <footer>
-        <ul class="horizontal_menu">
-          <li class="pull-right"><a href="#top">Voltar ao Topo</a></li>
-          <li><a href="">Início</a></li>
-          <li><a href="">Produtos</a></li>
-          <li><a href="">Contato</a></li>
-          <li><a href="">Termos e Privacidade</a></li>
-        </ul>
-    </footer>
-
-    <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="{% static 'assets/js/navbar.js' %}"></script>
+    <script src="{% static 'assets/js/gallery.js' %}"></script>
 
-    <!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
+    <script src="{% static 'assets/bootstrap.min.js' %}"></script>
+
 </body>
 </html>
