@@ -1,19 +1,27 @@
+
+#menu {
+    height: 100px;
+    text-align: center;
+    display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
 #menu ul {
 	padding:0px;
 	margin:0px;
 	background-color: transparent;
 	list-style:none;
     text-align: center;
-
 }
 
 #menu ul li {
-  display: inline;
-
+   display: inline-block;
+    float: none;
 }
 
 #menu ul li a {
-	padding: 2px 10px;
+	padding: 2px 50px;
 	display: inline-block;
   color: black;
 	/* visual do link */
@@ -28,14 +36,22 @@
 
 }
 
+.div#logo{
+ font-size: 3rem;
+ color: #fff;
+ transition: all 0.4s;
+}
+
 .menuFixo {
     position: fixed;
     top: 0px;
     background-color: white;
+     transition: all 0.4s;
 }
 
 #logo {
     text-align: center;
     margin: auto;
+    transition: all 0.4s;
 }
 

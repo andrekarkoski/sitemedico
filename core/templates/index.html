@@ -4,10 +4,72 @@
 
 {% block container %}
 <link rel="stylesheet" href="{% static 'assets/css/index.css' %}" media="screen" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
 
-<p>Lorem ipsum dolor sit amet. Est optio sunt et quaerat fugit sed porro ipsam. Aut magnam recusandae ad delectus nulla est saepe quod et  asperiores ea consequatur voluptatum a voluptatem eveniet? Aut nulla dolores ut exercitationem voluptas At illum sint eum ullam quae qui rerum illo. Est exercitationem repudiandae eos officiis maxime quo laboriosam recusandae? </p><p>Id consequatur suscipit ut accusantium alias et possimus voluptas nam beatae sequi sed voluptatem quasi eos aspernatur recusandae. Ut minima fugit ea provident deleniti ut beatae eaque et sunt laboriosam. Sit omnis odit ut pariatur laborum sed consectetur eius eos nisi ipsam in omnis nihil ea omnis commodi. Et inventore magnam est animi quaerat ex dolor amet. </p><p>Et aliquid voluptate in sunt quia non libero sint rem veniam autem aut repudiandae repudiandae. Sed asperiores dolor sed ipsam consectetur aut laudantium aliquam non officia illo ea quos nisi in adipisci corrupti. </p>
-<p>Lorem ipsum dolor sit amet. Est optio sunt et quaerat fugit sed porro ipsam. Aut magnam recusandae ad delectus nulla est saepe quod et  asperiores ea consequatur voluptatum a voluptatem eveniet? Aut nulla dolores ut exercitationem voluptas At illum sint eum ullam quae qui rerum illo. Est exercitationem repudiandae eos officiis maxime quo laboriosam recusandae? </p><p>Id consequatur suscipit ut accusantium alias et possimus voluptas nam beatae sequi sed voluptatem quasi eos aspernatur recusandae. Ut minima fugit ea provident deleniti ut beatae eaque et sunt laboriosam. Sit omnis odit ut pariatur laborum sed consectetur eius eos nisi ipsam in omnis nihil ea omnis commodi. Et inventore magnam est animi quaerat ex dolor amet. </p><p>Et aliquid voluptate in sunt quia non libero sint rem veniam autem aut repudiandae repudiandae. Sed asperiores dolor sed ipsam consectetur aut laudantium aliquam non officia illo ea quos nisi in adipisci corrupti. </p>
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="../static/assets/img/kelson.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Dr. Kelson</h1><br>
+      <h5 class="w3-center">Formado desde 1980 e guaraná de rolha</h5>
+      <p class="w3-large">
+        Lorem ipsum dolor sit amet. Est optio sunt et quaerat fugit sed porro ipsam. Aut magnam recusandae ad delectus nulla est saepe quod et asperiores ea consequatur voluptatum a voluptatem eveniet? Aut nulla dolores ut exercitationem voluptas At illum sint eum ullam quae qui rerum illo. Est exercitationem repudiandae eos officiis maxime quo laboriosam recusandae?
+        Id consequatur suscipit ut accusantium alias et possimus voluptas nam beatae sequi sed voluptatem quasi eos aspernatur recusandae. Ut minima fugit ea provident deleniti ut beatae eaque et sunt laboriosam. Sit omnis odit ut pariatur laborum sed consectetur eius eos nisi ipsam in omnis nihil ea omnis commodi. Et inventore magnam est animi quaerat ex dolor amet.
+
+      </p>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Mininu Estudadô</h1><br>
+      <h4>Lorem ipsum</h4>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+      <h4>Lorem ipsum dolor sit ame</h4>
+      <p class="w3-text-grey">Aut magnam recusandae ad delectus nulla est saepe quod et as</p><br>
+
+      <h4>Et aliquid </h4>
+      <p class="w3-text-grey">ea omnis commodi. Et inventore magnam est animi quaerat ex dolor amet. </p><br>
+
+      <h4>Et inventore magnam</h4>
+      <p class="w3-text-grey"> voluptatem eveniet? Aut nulla dolores ut exercitationem voluptas At illum sint eum ullam quae qui rerum illo. Est maxime quo laboriosam recusandae?</p>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="../static/assets/img/kelson1.png" class="w3-round w3-image" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section  -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contato</h1><br>
+    <p>Algum texto bunito aqui pra impressionar os gordim ou quem mais ocê quiser.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Consultório, Rua Principal, 43 - Itatinga - Campinas, SP </b></p>
+    <p>Nosso Tel 021 9999-2323 ou e-mail drkelson@gmail.com, ou pode nos mandar uma mensagem aqui:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="E-mail" required name="email"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mensagem" required name="message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">Enviar</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
 
 
 {% endblock %}
