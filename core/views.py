@@ -17,6 +17,10 @@ def gallery(request):
     return render(request, 'gallery.html')
 
 
+def teste(request):
+    return render(request, 'teste.html')
+
+
 def contact(request):
     success = False
     form = ContactForm(request.POST or None)

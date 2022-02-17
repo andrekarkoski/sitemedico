@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^contato/$', views.contact, name='contact'),
     url(r'^gallery/$', views.gallery, name='gallery'),
+    url(r'^teste/$', views.teste, name='teste'),
     url('admin/', admin.site.urls),
 ]
