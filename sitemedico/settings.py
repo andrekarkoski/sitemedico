@@ -161,10 +161,6 @@ EMAIL_HOST_PASSWORD = 'zbtymtmiwplkpdrd'
 DEFAULT_FROM_EMAIL = 'andreskarkoski@gmail.com'
 
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
 ### Id do app instagran
 ### 340629544639865
 
